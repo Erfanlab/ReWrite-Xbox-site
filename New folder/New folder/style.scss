@@ -1,0 +1,59 @@
+$color-list: (
+  red: #dc143c,
+  blue: #4169e1,
+  green: #3cb371,
+  yellow: #ffd700,
+  purple: #cc0099,
+);
+
+$size-list: (
+  xs: 12px,
+  sm: 16px,
+  md: 24px,
+  lg: 32px,
+  xl: 46px,
+);
+
+@mixin flexIt (){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin createPickersItem ($property, $list) {  
+  @each $item, $value in $list {
+    &-#{$item}{
+      #{$property}: $value;
+    }}
+}
+	// YOUR CODE HERE, USE EACH LOOP
+
+.container {
+  @include flexIt();
+  gap: 10px;
+  margin-bottom: map-get($size-list, sm);
+}
+
+.picker {
+  @include flexIt();
+  width: map-get($size-list, xl);
+  height: map-get($size-list, xl);
+  border-radius: 8px;
+  padding: 2px;
+  border: solid 1px #bbb;
+  cursor: pointer;
+}
+
+.color-picker {
+  @include 
+  createPickersItem(background-color,$color-list);
+	// YOUR CODE HERE
+  
+};
+
+.size-picker {
+  text-align: center;
+  @include 
+  createPickersItem(font-size,$size-list);
+  	// YOUR CODE HERE
+};
