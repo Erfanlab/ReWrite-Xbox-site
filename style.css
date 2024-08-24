@@ -1,3 +1,7 @@
+.svg {
+  display: none;
+}
+
 body {
   font-family: Helvetica, sans-serif;
   padding: 0;
@@ -212,7 +216,6 @@ body .list-info ul {
   flex-direction: row;
 }
 body .list-info .list-info-li-bigr {
-  position: absolute;
   display: flex;
   background-image: url("https://assets.xboxservices.com/assets/9b/2c/9b2c746d-e4ec-4d54-a86d-26368cd19ba7.jpg?n=7400229_Large-tout-0_1083x1222_01.jpg");
   background-repeat: no-repeat;
@@ -221,12 +224,11 @@ body .list-info .list-info-li-bigr {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  width: 50%;
+  width: 100%;
   height: 800px;
   list-style-type: none;
 }
 body .list-info .list-info-li-bigr .list-info-li-bigr-txt {
-  position: absolute;
   width: 80%;
   height: 50%;
   bottom: 0;
@@ -270,13 +272,12 @@ body .list-info .list-info-li-twor {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   right: 0;
   text-align: center;
   right: 0;
   list-style-type: none;
-  width: 45%;
-  height: 450px;
+  width: 100%;
+  height: 35%;
   margin: 0;
   margin-right: 40px;
   padding: 0;
@@ -285,7 +286,7 @@ body .list-info .list-info-li-twor {
 }
 body .list-info .list-info-li-twor .list-info-li-twor-txt {
   width: 50%;
-  height: 450px;
+  height: 100%;
   color: black;
   display: flex;
   flex-direction: column;
@@ -332,7 +333,7 @@ body .list-info .list-info-li-twor .list-info-li-twor-txt h5:hover {
 }
 body .list-info .list-info-li-twor .list-info-li-twor-img {
   width: 50%;
-  height: 450px;
+  height: 100%;
   position: relative;
   right: -1px;
   transition: all 0.2s ease-in-out;
@@ -351,17 +352,167 @@ body .list-info .list-info-li-twor .list-info-li-twor-img img:hover {
 }
 body .list-info .list-info-li-bigl {
   background-image: url(https://assets.xboxservices.com/assets/9a/07/9a076a61-4d27-43de-9bbd-91eeef605157.jpg?n=Accessories-Elevate-Your-Game_Large-tout-0_1083x1222.jpg);
-  position: absolute;
   right: 0;
   list-style-type: none;
-  width: 45%;
-  height: 800px;
-  margin: auto;
-  margin-top: 460px;
-  margin-right: 40px;
+  width: 100%;
+  height: 70%;
 }
 body .list-info .list-info-li-twol {
   list-style-type: none;
+  width: 100%;
+  height: 40%;
+  background-color: #107c10;
+}
+
+.list-info-li-bigr-2 {
+  list-style-type: none;
+  width: 100%;
+  height: 35% !important;
+  background-color: #107c10;
+  display: flex;
+}
+.list-info-li-bigr-2 .list-info-li-bigr-2-txt {
+  width: 50%;
+}
+.list-info-li-bigr-2 .list-info-li-bigr-2-txt {
+  width: max-content;
+  padding-left: 10px;
+}
+.list-info-li-bigr-2 .list-info-li-bigr-2-txt h4 {
+  background-color: #ffd800;
+  padding: 2px;
+  font-size: 14px;
+  width: fit-content;
+  text-align: start;
+}
+.list-info-li-bigr-2 .list-info-li-bigr-2-txt h2 {
+  color: white;
+  font-size: 35px;
+  text-align: start;
+}
+.list-info-li-bigr-2 .list-info-li-bigr-2-txt h3 {
+  text-align: left;
+  color: white;
+  font-size: 12px;
+}
+.list-info-li-bigr-2 .list-info-li-bigr-2-txt h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  padding: 5px;
+  font-size: 15px;
+  gap: 0;
+  transition: all 0.5s ease;
+  background-color: #9BF00B;
+  color: #054B16;
+}
+.list-info-li-bigr-2 .list-info-li-bigr-2-txt h5 strong {
+  color: #054B16;
+}
+.list-info-li-bigr-2 .list-info-li-bigr-2-txt h5:hover {
+  text-decoration-line: underline;
+  transition: all 0.5s ease;
+  gap: 20px;
+}
+.list-info-li-bigr-2 .list-info-li-bigr-2-img {
+  width: 60%;
+  height: 100%;
+  background-image: url(https://assets.xboxservices.com/assets/c9/fd/c9fdc896-5d2e-4662-9fd7-62d62a0dc2e9.jpg?n=07546778_Small-tout-1084_475x534_01.jpg%202);
+  background-repeat: no-repeat;
+  transition: all 500ms ease-in-out;
+  background-size: 100% 100% !important;
+  background-position: center center !important;
+  background-repeat: no-repeat;
+}
+.list-info-li-bigr-2 .list-info-li-bigr-2-img:hover {
+  background-size: 120% 120% !important;
+  background-position: center center !important;
+  transition: all 500ms ease-in-out;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+
+.list-info-right {
+  padding: 0;
+  gap: 10px;
+  margin: 0;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-info-left {
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: #f2f2f2;
+}
+footer .footerup {
+  display: flex;
+  width: 80%;
+  height: 90%;
+}
+footer .footerup div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+footer .footerup div b {
+  color: #616161;
+  font-size: 15px;
+}
+footer .footerup div a {
+  font-size: 11px;
+  color: #616161;
+  text-decoration: none;
+}
+footer .footerup div a:hover {
+  text-decoration: underline;
+}
+footer .footerdown {
+  display: flex;
+  gap: 20px;
+  color: #616161;
+  font-size: 11px;
+  width: 100%;
+  background-color: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+footer .footerdown div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+footer .footerdown div a {
+  display: flex;
+  text-decoration: none;
+  color: #616161;
+}
+footer .footerdown div a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
