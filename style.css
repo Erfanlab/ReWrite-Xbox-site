@@ -1,4 +1,5 @@
 body {
+  font-family: Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   font: 100% Helvetica, sans-serif;
@@ -119,13 +120,14 @@ body .main .slid-bar__text {
   height: 100%;
 }
 body .main .slid-bar__text h2 {
-  padding: 2px;
+  padding: 5spx;
   font-size: 12px;
   width: 190px;
   height: 15px;
+  text-align: center;
   color: black;
   font-weight: lighter;
-  background-color: #FFD800;
+  background-color: #ffd800;
 }
 body .main .slid-bar__text h1 {
   cursor: pointer;
@@ -190,8 +192,7 @@ body .select-all .select-all-items .select-all-items__link {
 }
 body .select-all .select-all-items .select-all-items__link:hover {
   transition: all 0.5s ease;
-  -webkit-text-decoration: underline 3px;
-          text-decoration: underline 3px;
+  text-decoration: underline 3px;
 }
 body .select-all .select-all-items h2 {
   padding: 0;
@@ -203,7 +204,6 @@ body .list-info {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-color: #FFD800;
   width: 100%;
   height: 1200px;
 }
@@ -266,6 +266,7 @@ body .list-info .list-info-li-bigr .list-info-li-bigr-txt h4:hover {
   gap: 20px;
 }
 body .list-info .list-info-li-twor {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,10 +287,67 @@ body .list-info .list-info-li-twor .list-info-li-twor-txt {
   width: 50%;
   height: 450px;
   color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 10px;
+}
+body .list-info .list-info-li-twor .list-info-li-twor-txt h4 {
+  background-color: #ffd800;
+  padding: 2px;
+  font-size: 14px;
+  width: fit-content;
+  text-align: start;
+}
+body .list-info .list-info-li-twor .list-info-li-twor-txt h2 {
+  color: white;
+  font-size: 35px;
+  text-align: start;
+}
+body .list-info .list-info-li-twor .list-info-li-twor-txt h3 {
+  text-align: left;
+  color: white;
+  font-size: 12px;
+}
+body .list-info .list-info-li-twor .list-info-li-twor-txt h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  padding: 5px;
+  font-size: 15px;
+  gap: 0;
+  transition: all 0.5s ease;
+  background-color: #9BF00B;
+  color: #054B16;
+}
+body .list-info .list-info-li-twor .list-info-li-twor-txt h5 strong {
+  color: #054B16;
+}
+body .list-info .list-info-li-twor .list-info-li-twor-txt h5:hover {
+  text-decoration-line: underline;
+  transition: all 0.5s ease;
+  gap: 20px;
 }
 body .list-info .list-info-li-twor .list-info-li-twor-img {
   width: 50%;
   height: 450px;
+  position: relative;
+  right: -1px;
+  transition: all 0.2s ease-in-out;
+}
+body .list-info .list-info-li-twor .list-info-li-twor-img img {
+  transition: all 500ms ease-in-out;
+  background-size: 100% 100% !important;
+  background-image: url(https://assets.xboxservices.com/assets/59/0f/590f50e9-4ed1-485f-a4d1-f4877015fb99.jpg?n=XGP-2024_Small-tout-1084_03-28-24_475x534.jpg);
+  background-position: center center !important;
+  background-repeat: no-repeat;
+}
+body .list-info .list-info-li-twor .list-info-li-twor-img img:hover {
+  background-size: 120% 120% !important;
+  background-position: center center !important;
+  transition: all 500ms ease-in-out;
 }
 body .list-info .list-info-li-bigl {
   background-image: url(https://assets.xboxservices.com/assets/9a/07/9a076a61-4d27-43de-9bbd-91eeef605157.jpg?n=Accessories-Elevate-Your-Game_Large-tout-0_1083x1222.jpg);
@@ -301,9 +359,9 @@ body .list-info .list-info-li-bigl {
   margin: auto;
   margin-top: 460px;
   margin-right: 40px;
-  background-color: aqua;
 }
 body .list-info .list-info-li-twol {
   list-style-type: none;
-  background-color: aqua;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
